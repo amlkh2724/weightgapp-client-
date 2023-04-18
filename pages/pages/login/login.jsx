@@ -9,7 +9,7 @@ import Spinner from "@/pages/components/spinner/spinner";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isLoading,setIsLoading]=useState(false)
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -19,7 +19,7 @@ export default function Login() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true)
+    setIsLoading(true);
     try {
       const res = await axios.post(
         "https://tame-tan-binturong-belt.cyclic.app/users/login",
@@ -117,23 +117,23 @@ export default function Login() {
         );
         if (weightRecordsToday.length > 0) {
           // User has already added their weight for the day
-          setIsLoading(false)
+          setIsLoading(false);
 
           router.push("/pages/weeklytracker/weeklyweight");
         } else {
-          setIsLoading(false)
+          setIsLoading(false);
 
           // User has not yet added their weight for the day
           router.push("/pages/home/home");
         }
       } else {
-        setIsLoading(false)
+        setIsLoading(false);
 
         // User has not yet added any weight records
         router.push("/pages/home/home");
       }
     } catch (err) {
-      setIsLoading(false)
+      setIsLoading(false);
 
       console.error(err);
     }

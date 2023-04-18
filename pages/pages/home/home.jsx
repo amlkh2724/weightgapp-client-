@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import Model from "@/pages/components/model/model";
-import styles from '../../../styles/ModelOptionFood.module.css'
+import styles from "../../../styles/ModelOptionFood.module.css";
 const Home = () => {
   const [username, setUsername] = React.useState("");
   useEffect(() => {

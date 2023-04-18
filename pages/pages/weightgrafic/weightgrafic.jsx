@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Chart from 'chart.js/auto';
-import { CategoryScale, LinearScale } from 'chart.js';
+import Chart from "chart.js/auto";
+import { CategoryScale, LinearScale } from "chart.js";
 
 Chart.register(CategoryScale, LinearScale);
 import { Line } from "react-chartjs-2";
@@ -54,17 +54,17 @@ const WeightGraph = () => {
               title: { text: "Weight over Time", display: true },
               scales: {
                 x: {
-                  type: 'category',
+                  type: "category",
                   title: {
                     display: true,
-                    text: 'Date'
-                  }
+                    text: "Date",
+                  },
                 },
                 y: {
-                  type: 'linear',
+                  type: "linear",
                   title: {
                     display: true,
-                    text: 'Weight (lbs)'
+                    text: "Weight (lbs)",
                   },
                   ticks: {
                     beginAtZero: true,
