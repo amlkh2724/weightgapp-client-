@@ -1,0 +1,113 @@
+.containerr {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../pages/Assests/trackpagebackgroundpc.png')no-repeat center center/cover;
+}
+
+.centeritmodel {
+  /* background-color: red; */
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerName {
+  position: absolute;
+  bottom: 77%;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 10px #000;
+  animation: welcome-animation 5s infinite;
+}
+
+@keyframes welcome-animation {
+  0% {
+    transform: scale(1);
+    color: #fff;
+  }
+
+  50% {
+    transform: scale(1.2);
+    color: #2a2a2a;
+  }
+
+  100% {
+    transform: scale(1);
+    color: #fff;
+  }
+}
+
+.containerr label {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerr form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+}
+
+.containerr input[type="number"],
+.containerr select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.053);
+
+}
+
+.containerr .total {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.containerr button[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(6, 7, 6);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.borderit {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  border-radius: 2rem;
+  background-image: linear-gradient(to right, rgb(62, 60, 60), rgba(12, 12, 12, 0.67));
+
+  /* -webkit-box-shadow: 0px 0px 17px 18px #000000; */
+  box-shadow: 0px 0px 17px 18px #8b82824f;
+}
+@media (min-width: 200px) and (max-width: 700px) {
+  .containerr { 
+    background: url('../pages/Assests/backgroundforbuttons.gif')no-repeat center center;
+
+  }
+  .containerr button[type="submit"] {
+background: url('../pages/Assests/backgroundforbuttons.gif')no-repeat center center;
+  }
+  
+  .borderit {
+    background-image: linear-gradient(to right, rgb(67, 60, 60), rgba(12, 12, 12, 0.67));
+  
+    -webkit-box-shadow: 0px 0px 17px 18px #000000;
+    box-shadow: 0px 0px 17px 18px #b0a2a27e;
+  }
+}

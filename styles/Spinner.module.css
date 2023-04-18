@@ -1,0 +1,17 @@
+.allPage{
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    background: url("../pages/Assests/spinner.gif")no-repeat center center/cover;
+    position: absolute;
+    width: 130px;
+    height: 110px;
+}

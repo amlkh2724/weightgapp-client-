@@ -1,0 +1,186 @@
+.logincontainer {
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url("../pages/Assests/trackbackgroundpc.jpg")no-repeat center center/cover;
+}
+
+.logincontainer form {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(84, 84, 84, 0.522), rgba(98, 92, 92, 0.155));
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logincontainer label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logincontainer input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+}
+
+.logincontainer button {
+
+    background-color: #4caf4f0c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+
+.logincontainer button:hover {
+    background-color: #449d44;
+}
+
+.logincontainer p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.logincontainer a {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logincontainer a:hover {
+    text-decoration: underline;
+}
+.appName{
+    display: flex;
+    flex-direction: column;
+
+}
+@media (min-width: 200px) and (max-width: 700px) {
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
+        background-color: #000000;
+        /* background: url("../pages/Assests/smoke03.gif"); */
+
+    }
+
+    .picture {
+        height: 60vh;
+        background: url('../pages/Assests/mobileloginback.gif')no-repeat center center/cover;
+        /* background-color: red; */
+        /* background: url('../pages/Assests/llooggiinnbackground.png') no-repeat center center/cover; */
+    }
+.controlllog{
+    height: 50vh;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px -16px 11px 6px #000000;
+    box-shadow: 0px -16px 11px 6px #000000;
+}
+    .logincontainer form {
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .fixform {
+        display: flex;
+    }
+
+    .logincontainer label {
+        display: none;
+    }
+
+    .logincontainer span {
+        margin: 0.4rem;
+        position: absolute;
+    }
+
+    .logincontainer input {
+        text-align: center;
+        border-radius: 1rem;
+        border: 1px solid white;
+        background-color: rgb(58, 55, 55);
+    }
+
+    .logincontainer button {
+        background: url('../pages/Assests/backgroundforbuttons.gif') no-repeat center center;
+
+        /* background-color: rgb(144, 98, 68); */
+        /* background: url('../pages/Assests/mobileloginbackground.gif')no-repeat center center/cover; */
+    }
+    
+    .logincontainer button:hover {
+        background-color: rgba(144, 98, 68, 0.5);
+    }
+
+
+    .logincontainer {
+        text-align: center;
+    }
+    
+.logincontainer form {
+    border: 1px solid white;
+   
+    background-image: linear-gradient(to right, rgba(84, 84, 84, 0), rgba(98, 92, 92, 0));
+
+
+}
+
+}
+
+/* @media (min-width: 300px) and (max-width: 600px) {
+    .container {
+        height: 70vh;
+        background: url('../pages/Assests/backgroundmobile.jpg') no-repeat center 70%/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 2rem;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .picture {
+        width: 70%;
+        height: 100%;
+        background-image: url('../pages/Assests/backgroundmobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 1rem;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    .fixform {
+        margin-bottom: 1rem;
+    }
+} */

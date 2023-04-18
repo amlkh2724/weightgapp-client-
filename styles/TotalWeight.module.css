@@ -1,0 +1,38 @@
+.tableForCheck {
+  /* background-color: rgba(192, 185, 185, 0.476); */
+    display: flex;
+    justify-content: center;
+  /* width: 100vw; */
+  }
+  
+  .tableForCheck table {
+    border-collapse: collapse;
+    margin: 1px;
+    /* margin: 20px; */
+    width: 100%;
+    /* max-width: 800px; */
+  }
+  
+  .tableForCheck th,
+  .tableForCheck td {
+    
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .tableForCheck thead .tableForCheck th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .tableForCheck tbody .tableForCheck tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .tableForCheck tr .tableForCheck td:first-child {
+    font-weight: bold;
+  }
+  .tableForCheck th{
+    background-color: rgba(120, 149, 120, 0.345);
+  }

@@ -1,0 +1,61 @@
+
+
+ .navbar {
+    padding: 0.2rem;
+    background-color: #f2f2f2;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.212);
+  }
+      
+  .navbar__title {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #333;
+    margin-right: 1.5rem;
+    
+  }
+  .logout{
+    color: #333;
+    position: absolute;
+    top: 0;
+    margin: 0.5rem;
+  }
+    
+  .navbar__links {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+    
+  .navbar__link {
+    font-weight: bold;
+    color: #333;
+    margin-right: 1.5rem;
+    text-decoration: none;
+  }
+    
+  .navbar__link:hover {
+    color: #333333c8;
+    } 
+  
+  /* Media queries for phones */
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      justify-content: space-between;
+      padding: 0.3rem;
+      /* height: 8vh; */
+    }
+  
+    .navbar__title {
+      font-size: 1.1rem;
+      margin-right: 1rem;
+    }
+  
+    .navbar__link {
+      font-size: 0.9rem;
+      margin-right: 0.5rem;
+    }
+  }
+  
