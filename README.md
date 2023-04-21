@@ -107,4 +107,4 @@ Back-end development: Node.js (Terminal Command Line & Debugging Module, Es modu
 [![portfolio](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/amlkh2724/weightgapp-client-)
 
 ## 🔗 Link to my Linkedin!
-[![portfolio](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.linkedin.com/in/aml-chanjar-61a2a3265)
+[![portfolio](https://img.shields.io/badge/Linkedin-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.linkedin.com/in/aml-chanjar-61a2a3265)
