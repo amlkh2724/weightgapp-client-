@@ -16,7 +16,6 @@ const RegisterPage = () => {
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
   const router = useRouter();
-
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
@@ -165,4 +164,3 @@ const RegisterPage = () => {
 };
 
 export default RegisterPage;
-
