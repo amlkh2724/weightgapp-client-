@@ -51,7 +51,6 @@ const WeightGraph = () => {
     <div className={`${styles.container} ${isDarkMode ? styles.darkmodee : styles.lightmode}`}>
       <div className={styles.switchContainer}>
         <label className={styles.switch}>
-          {/* Use a checkbox to toggle dark mode */}
           <input type="checkbox" onChange={handleDarkModeToggle} />
           <span className={`${styles.slider} ${styles.round}`}></span>
         </label>

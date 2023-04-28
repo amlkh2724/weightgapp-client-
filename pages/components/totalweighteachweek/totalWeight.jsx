@@ -145,7 +145,6 @@ const TotalWeight = ({ weightRecords }) => {
 
         console.log("you down!");
       }
-      console.log("asdas");
       localStorage.setItem("user", JSON.stringify(getWeeks));
     }
   }, []);
@@ -171,7 +170,7 @@ const TotalWeight = ({ weightRecords }) => {
           </thead>
           <tbody>
             <tr>
-              <td>{`${averageWeight} kg`}</td>
+              <td>{`${averageWeight.toFixed(2)} kg`}</td>
               <td>{countDays}</td>
               {firstWeek && (
                 <td>

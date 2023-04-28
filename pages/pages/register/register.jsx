@@ -76,7 +76,7 @@ const RegisterPage = () => {
             <Link href="/pages/login/login">
               <FontAwesomeIcon
                 icon={faArrowLeft}
-                style={{ color: "#000000", width: "4rem" }}
+                style={{ color: "#a79d9d", width: "4rem" }}
                 className="fa-fade"
               />
             </Link>

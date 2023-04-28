@@ -22,6 +22,7 @@ const WeightRecords = () => {
       }
     };
     fetchUser();
+    console.log("weightRecords",weightRecords);
   }, []);
 
   const handleDarkModeToggle = () => {

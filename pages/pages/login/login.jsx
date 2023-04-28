@@ -29,16 +29,13 @@ export default function Login() {
         }
       );
       const userData = res.data.user;
-      console.log("userData:", userData);
       // Save user data in local storage
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("username", userData.username);
       localStorage.setItem("user", JSON.stringify(userData));
       const getlcoa = JSON.parse(localStorage.getItem("user"));
-      console.log("getlcoa", getlcoa);
 
       const weekTracker = getlcoa.weekTracker || [];
-
       const checkres =
         weekTracker.length > 0
           ? weekTracker[weekTracker.length - 1]
@@ -63,13 +60,9 @@ export default function Login() {
       const endOfWeek = new Date(
         todayy.setDate(todayy.getDate() - todayy.getDay() + 7)
       );
-      console.log("endweek:", endOfWeek);
       const nextWeek = new Date(endOfWeek);
       nextWeek.setDate(nextWeek.getDate() + 1);
-      console.log("startweek:", startOfWeek);
-      console.log("endweek:", endOfWeek);
-      console.log("nextWeek:", nextWeek);
-      console.log("todayy:", todayy);
+
       if (!checkres || parsedEndDate < startOfWeek) {
         console.log("nextweek!");
         localStorage.setItem(
@@ -98,14 +91,11 @@ export default function Login() {
       const weightRes = await axios.get(
         `https://tame-tan-binturong-belt.cyclic.app/users/userbyid/${userData.id}`
       );
-      console.log("informationUser:", weightRes);
       const weightRecords = weightRes.data.data.weekTracker;
-      console.log("weektracker:", weightRecords);
       const today = new Date().toLocaleDateString();
 
       if (weightRecords.length > 0) {
         const lastWeekTracker = weightRecords[weightRecords.length - 1];
-        console.log("lastweektracker:", lastWeekTracker);
         const weightRecordsToday = lastWeekTracker.weightRecords.filter(
           (record) => record.date === today
         );

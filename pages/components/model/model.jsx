@@ -7,21 +7,7 @@ import { useState } from "react";
 import axios from "axios";
 const Model = () => {
   const [errorMessage, setErrorMessage] = useState("");
-  const {
-    weight,
-    setWeight,
-    setTotalCalories,
-    totalCalories,
-    breakfast,
-    setBreakfast,
-    lunch,
-    setLunch,
-    dinner,
-    setDinner,
-    calories,
-    setCalories,
-    options,
-  } = useContext(AppContext);
+  const {weight,setWeight,setTotalCalories,totalCalories,breakfast,setBreakfast,lunch,setLunch,dinner,setDinner,calories,setCalories,options} = useContext(AppContext);
   const router = useRouter();
   const handleSubmit = async (event) => {
     event.preventDefault();
