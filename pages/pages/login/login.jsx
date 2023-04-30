@@ -51,12 +51,7 @@ export default function Login() {
       ) {
         const getdate = checkres.weightRecords;
         console.log(getdate.date);
-        console.log("getdate:", getdate[getdate.length - 1].date);
       }
-
-      console.log("checkres:", checkres);
-      // checkres.weightRecords
-
       const [day, month, year] = (checkres?.endDate || "0.0.0").split(".");
       const parsedEndDate = new Date(year, month - 1, day);
       console.log("checkres.endDate.newday:", parsedEndDate);

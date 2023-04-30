@@ -3,17 +3,122 @@
   width: 100%;
 }
 
-.table  th,
+.table-black {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
 .table td {
-  text-align: left;
   padding: 8px;
 }
 
+.black {
+  color: #000000;
+}
+
+.table-black th,
+.table-black td {
+
+  padding: 8px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .table th {
-  background-color: #4caf50;
-  color: white;
+  background: linear-gradient(-45deg, #787c78, #616260, #363736);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+.table tr {
+  text-align: center;
 }
 
 .table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #aaa4a46b;
+}
+
+.table-black tr:nth-child(even) {
+  background-color: #645858;
+}
+
+.darkmode {
+  /* position: absolute; */
+  background: url("../pages/Assests/gifdarkmode.gif")no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.lightmode {
+  background: url("../pages/Assests/weeklybackground.avif") no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.switch {
+  position: absolute;
+  right: 0;
+  bottom: 8%;
+  margin: 2rem;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1b1919;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #404244;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #494b4c;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }

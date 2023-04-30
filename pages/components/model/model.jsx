@@ -3,13 +3,16 @@ import { useContext } from "react";
 import { useRouter } from "next/router";
 import { AppContext } from "@/pages/context/appProvider";
 import styles from "../../../styles/ModelOptionFood.module.css";
+import { useState } from "react";
 import axios from "axios";
 const Model = () => {
-  const {weight,setWeight,setTotalCalories,totalCalories,breakfast,setBreakfast,lunch,setLunch,dinner,setDinner,calories,setCalories,options} = useContext(AppContext);
+  const [errorMessage, setErrorMessage] = useState("");
+  const {weight,setWeight,setTotalCalories,totalCalories,breakfast,setBreakfast,lunch,setLunch,dinner,setDinner,calories,setCalories,options,} = useContext(AppContext);
   const router = useRouter();
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (weight <= 0) { alert("Please enter a positive number for weight.");
+    if (weight <= 0) {
+      setErrorMessage("Please enter a positive number for weight!");
       return;
     }
     if (!breakfast && !lunch && !dinner) {
@@ -20,7 +23,7 @@ const Model = () => {
       );
       router.push("/pages/weeklytracker/weeklyweight");
     } else {
-      alert("Please fill in all meals.");
+      setErrorMessage("Please fill in all meals!");
     }
     const user = JSON.parse(localStorage.getItem("user"));
     const today = new Date();
@@ -129,6 +132,7 @@ const Model = () => {
       <div className={styles.centeritmodel}>
         <div className={styles.borderit}>
           <h2>Weight Tracker</h2>
+          <h5 className={styles.red}>{errorMessage}</h5>
           <form onSubmit={handleSubmit}>
             <label>
               Weight:

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import styles from "../../../styles/HisoryWeeksCard.module.css"
+import styles from "../../../styles/HisoryWeeksCard.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 const HistoryWeeks = () => {
   const [userData, setUserData] = useState(null);
@@ -7,7 +9,7 @@ const HistoryWeeks = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const getIdFromLocalStorage = JSON.parse(localStorage.getItem("user"))
+        const getIdFromLocalStorage = JSON.parse(localStorage.getItem("user"));
         setUserData(getIdFromLocalStorage.weeksHistory);
       } catch (error) {
         console.error(error);
@@ -33,7 +35,12 @@ const HistoryWeeks = () => {
               <td className={styles.date}>{data.date}</td>
               <td className={styles.day}>{data.day}</td>
               <td className={styles.totalAverage}>
-                {data.totalAverageOnWeekGainOrLoss}
+                {`${data.totalAverageOnWeekGainOrLoss.toFixed(2)} kg `}
+                <FontAwesomeIcon
+                  icon={faArrowUp}
+                  style={{ color: "#27ff0a" }}
+                  className="fa-bounce"
+                />
               </td>
             </tr>
           ))}

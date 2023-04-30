@@ -5,6 +5,7 @@ import TotalWeight from "@/pages/components/totalweighteachweek/totalWeight";
 
 const WeightRecords = () => {
   const [weightRecords, setWeightRecords] = useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
@@ -23,15 +24,25 @@ const WeightRecords = () => {
     fetchUser();
   }, []);
 
+  const handleDarkModeToggle = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${isDarkMode ? styles.darkmode : styles.lightmode}`}>
+      <div className={styles.switchContainer}>
+        <label className={styles.switch}>
+          <input type="checkbox" onChange={handleDarkModeToggle} />
+          <span className={`${styles.slider} ${styles.round}`}></span>
+        </label>
+      </div>
       <TotalWeight weightRecords={weightRecords} />
-      <table className={styles.table}>
+      <table className={`${styles.table} ${isDarkMode ? styles.tableDark : ""}`}>
         <thead>
-          <tr>
+          <tr className={isDarkMode ? styles.black : ""}>
             <th>Date</th>
             <th>Weight (kg)</th>
-            <th>day</th>
+            <th>Day</th>
           </tr>
         </thead>
         <tbody>
@@ -47,5 +58,5 @@ const WeightRecords = () => {
     </div>
   );
 };
-
 export default WeightRecords;
+

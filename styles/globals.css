@@ -24,6 +24,15 @@ p {
 h1 {
   margin-bottom: 20px;
 }
+   .dark {
+      background-color: black;
+      color: white;
+    }
+    
+    .light {
+      background-color: white;
+      color: black;
+    }
 
 
 

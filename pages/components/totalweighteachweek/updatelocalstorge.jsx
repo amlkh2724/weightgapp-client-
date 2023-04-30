@@ -3,9 +3,8 @@ import { AppContext } from "@/pages/context/appProvider";
 import { useEffect } from "react";
 import axios from "axios";
 const Updatelocalstorge = () => {
-  const { totalAverageOnWeekGainOrLoss, setTotalAverageOnWeekGainOrLoss } =
+  const { totalAverageOnWeekGainOrLoss } =
     useContext(AppContext);
-  // setTotalAverageOnWeekGainOrLoss(JSON.parse(user));
   useEffect(() => {
     const today = new Date();
     const dayOfWeek = today.toLocaleDateString("en-US", { weekday: "long" });
@@ -14,27 +13,9 @@ const Updatelocalstorge = () => {
       month: "long",
       day: "numeric",
     });
-    // setTotalAverageOnWeekGainOrLoss(
-    //   allWeeks[lastWeekIndex].totalAverageOnWeekGainOrLoss
-    // );
-    // Retrieve existing user data from local storage
     const userJson = localStorage.getItem("user");
     const user = JSON.parse(userJson);
-    // const weekHistoryLength = user.weeksHistory.length;
-    // if (weekHistoryLength > 1) {
-    //   setTotalAverageOnWeekGainOrLoss(
-    //     const getprev=
-    //     JSON.parse(
-    //       localStorage.getItem(user.weeksHistory[user.weeksHistory.length - 1])
-    //     )
-    //   );
-    // }
-// console.log(totalAverageOnWeekGainOrLoss);
-
-    // console.log(
-    //   "weekcurrent:",
-    //   user.weeksHistory[user.weeksHistory.length - 2]
-    // );
+  
     console.log("totalAverageOnWeekGainOrLoss:", totalAverageOnWeekGainOrLoss);
     // If there is no existing user data, create a new user object with the new week
     if (!user) {

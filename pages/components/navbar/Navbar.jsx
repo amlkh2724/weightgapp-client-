@@ -1,5 +1,4 @@
 import React from "react";
-
 import Link from "next/link";
 
 import styles from "@/styles/Navbar.module.css";
@@ -19,18 +18,20 @@ const Navbar = () => {
                   <Link href="/pages/weeklytracker/weeklyweight">Weekly</Link>
                 </li>
                 <li>
-                  <Link href="/pages/weightgrafic/weightgrafic">daily weight tracking</Link>
+                  <Link href="/pages/weightgrafic/weightgrafic">
+                    daily weight tracking
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/pages/historyWeeks/historyWeeks">HistoryWeeks</Link>
+                  <Link href="/pages/historyWeeks/historyWeeks">
+                    HistoryWeeks
+                  </Link>
                 </li>
                 <li>
                   <Link href="https://chat-questions.onrender.com/">Chat</Link>
                 </li>
                 <li>
-                  <Link href="/">
-                  logout
-                  </Link>
+                  <Link href="/">logout</Link>
                 </li>
               </ul>
             </div>
