@@ -70,7 +70,6 @@ export default function Login() {
       console.log("endweek:", endOfWeek);
       console.log("nextWeek:", nextWeek);
       console.log("todayy:", todayy);
-// 
       if (!checkres || parsedEndDate < startOfWeek) {
         console.log("nextweek!");
         localStorage.setItem(
