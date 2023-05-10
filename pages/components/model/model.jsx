@@ -7,7 +7,21 @@ import { useState } from "react";
 import axios from "axios";
 const Model = () => {
   const [errorMessage, setErrorMessage] = useState("");
-  const {weight,setWeight,setTotalCalories,totalCalories,breakfast,setBreakfast,lunch,setLunch,dinner,setDinner,calories,setCalories,options,} = useContext(AppContext);
+  const {
+    weight,
+    setWeight,
+    setTotalCalories,
+    totalCalories,
+    breakfast,
+    setBreakfast,
+    lunch,
+    setLunch,
+    dinner,
+    setDinner,
+    calories,
+    setCalories,
+    options,
+  } = useContext(AppContext);
   const router = useRouter();
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -149,7 +163,7 @@ const Model = () => {
                 value={breakfast}
                 onChange={(e) => handleOptionChange(e, "breakfast")}
               >
-                <option value="">Select an option</option>
+                <option value="">{breakfast || "Choose an option"}</option>
                 {options.breakfast.map((option) => (
                   <option key={option.value} value={option.value}>
                     {option.label}

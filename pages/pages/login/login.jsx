@@ -118,13 +118,13 @@ export default function Login() {
           setIsLoading(false);
 
           // User has not yet added their weight for the day
-          router.push("/pages/home/home");
+          router.push("/pages/weightinputdaily/weightinputdaily");
         }
       } else {
         setIsLoading(false);
 
         // User has not yet added any weight records
-        router.push("/pages/home/home");
+        router.push("/pages/weightinputdaily/weightinputdaily");
       }
     } catch (err) {
       setIsLoading(false);
@@ -145,7 +145,7 @@ export default function Login() {
               </span>
               <label htmlFor="email">Email</label>
               <input
-                className={styles.fff}
+                className={styles.inputStyle}
                 type="email"
                 id="email"
                 value={email}
@@ -159,7 +159,7 @@ export default function Login() {
               </span>
               <label htmlFor="password">Password</label>
               <input
-                className={styles.fff}
+                className={styles.inputStyle}
                 type="password"
                 id="password"
                 value={password}

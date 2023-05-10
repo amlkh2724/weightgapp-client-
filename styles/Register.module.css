@@ -20,7 +20,6 @@ background-color: rgba(0, 0, 0, 0.645);
 
 
 .container form {
-  /* padding: 10rem; */
   padding: 1.5rem;
   width: 25vw;
   border-radius: 2rem;
@@ -30,20 +29,17 @@ background-color: rgba(0, 0, 0, 0.645);
   gap: 1rem;
   background-image: linear-gradient(to right, rgba(84, 84, 84, 0.522), rgba(98, 92, 92, 0.155));
   -webkit-box-shadow: 0px 0px 26px 11px #000000; 
-  /* box-shadow: 0px 0px 26px 11px #b3acac; */
 
 
 }
 
 .container label {
   text-align: center;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
   font-weight: bold;
 
-  /* gap: 5px; */
 }
 
 .container input {
@@ -60,10 +56,7 @@ background-color: rgba(0, 0, 0, 0.645);
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
-/* 
-.gender {
-  background-color: rgba(3, 3, 3, 0);
-} */
+
 
 .gender {
   background-color: rgba(158, 0, 0, 0);
@@ -72,7 +65,6 @@ background-color: rgba(0, 0, 0, 0.645);
 
 .container input,
 .container select {
-  /* padding: 1px; */
   border-radius: 5px;
   border: 1px solid gray;
 }
@@ -106,10 +98,8 @@ background-color: rgba(0, 0, 0, 0.645);
   .backgroundRegister {
     height: 50vh;
 
-    /* background: url('../pages/Assests/signnn.jpg')no-repeat center center/cover; */
     background: url('../pages/Assests/registerback.gif')no-repeat center center/cover;
     width: 100vw;
-    /* background-color: #0053a3; */
   }
 
   .container span {
@@ -117,7 +107,6 @@ background-color: rgba(0, 0, 0, 0.645);
   }
 
   .container button {
-    /* background-color: rgb(144, 98, 68); */
     background: url('../pages/Assests/backgroundforbuttons.gif') no-repeat center center;
   }
 

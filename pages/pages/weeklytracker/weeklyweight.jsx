@@ -29,7 +29,11 @@ const WeightRecords = () => {
   };
 
   return (
-    <div className={`${styles.container} ${isDarkMode ? styles.darkmode : styles.lightmode}`}>
+    <div
+      className={`${styles.container} ${
+        isDarkMode ? styles.darkmode : styles.lightmode
+      }`}
+    >
       <div className={styles.switchContainer}>
         <label className={styles.switch}>
           <input type="checkbox" onChange={handleDarkModeToggle} />
@@ -37,7 +41,9 @@ const WeightRecords = () => {
         </label>
       </div>
       <TotalWeight weightRecords={weightRecords} />
-      <table className={`${styles.table} ${isDarkMode ? styles.tableDark : ""}`}>
+      <table
+        className={`${styles.table} ${isDarkMode ? styles.tableDark : ""}`}
+      >
         <thead>
           <tr className={isDarkMode ? styles.black : ""}>
             <th>Date</th>
@@ -59,4 +65,3 @@ const WeightRecords = () => {
   );
 };
 export default WeightRecords;
-

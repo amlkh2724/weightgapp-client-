@@ -81,15 +81,11 @@
         height: 100%;
         width: 100vw;
         background-color: #000000;
-        /* background: url("../pages/Assests/smoke03.gif"); */
-
     }
 
     .picture {
         height: 60vh;
         background: url('../pages/Assests/mobileloginback.gif')no-repeat center center/cover;
-        /* background-color: red; */
-        /* background: url('../pages/Assests/llooggiinnbackground.png') no-repeat center center/cover; */
     }
 .controlllog{
     height: 50vh;
@@ -124,9 +120,6 @@
 
     .logincontainer button {
         background: url('../pages/Assests/backgroundforbuttons.gif') no-repeat center center;
-
-        /* background-color: rgb(144, 98, 68); */
-        /* background: url('../pages/Assests/mobileloginbackground.gif')no-repeat center center/cover; */
     }
     
     .logincontainer button:hover {
@@ -147,40 +140,3 @@
 }
 
 }
-
-/* @media (min-width: 300px) and (max-width: 600px) {
-    .container {
-        height: 70vh;
-        background: url('../pages/Assests/backgroundmobile.jpg') no-repeat center 70%/cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-bottom: 2rem;
-    }
-
-    .mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .picture {
-        width: 70%;
-        height: 100%;
-        background-image: url('../pages/Assests/backgroundmobile.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-bottom: 1rem;
-    }
-
-    form {
-        width: 70%;
-    }
-
-    .fixform {
-        margin-bottom: 1rem;
-    }
-} */
